@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  font-family: 'Yantramanav', sans-serif;
+
+}
+
+.navbar {
+  padding: 0.33em 1.0em;
+  box-shadow: 0px 1px 5px 0px rgba(200,200,200,0.5);
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.nav-item {
+  padding: 0em 0.75em;
+  font-size: 1.25em;
+}
+
+#cover {
+  background-image: url("../images/placeholder.jpg");
+
+  padding-top: 27.5vh;
+
+  text-align: center;
+  color: white;
+
+  height: 100%;
+  width: 100%;
+
+  margin-left: 0;
+  margin-right: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.display-1 {
+  font-size: 10em;
+}
+
+.display-8 {
+  font-size: 3em;
+}
+
+#cover button {
+  width: 250px;
+  font-size: 1.5em;
+  margin: 1.5em 0.5em;
+}
+
+#cover .btn-block {
+  margin: auto;
+}
+
+.display-4 {
+  text-align: center;
+  padding-top: 0.25em;
+}
+
+#faq {
+  background: #44444444;
+  color: white;
+}
+
+/* TODO: Media query to change header font-size when shrunk. */
