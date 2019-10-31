@@ -66,4 +66,11 @@ html, body {
   color: white;
 }
 
-/* TODO: Media query to change header font-size when shrunk. */
+#contact {
+  background: #000000;
+  color: white;
+}
+
+.sponsor-image {
+  margin: 1em 0;
+}
