@@ -1,7 +1,10 @@
 html, body {
   height: 100%;
   font-family: 'Yantramanav', sans-serif;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -17,6 +20,23 @@ html, body {
 .nav-item {
   padding: 0em 0.75em;
   font-size: 1.25em;
+}
+
+.display-1 {
+  font-size: 10em;
+}
+
+.display-4 {
+  text-align: center;
+  padding-top: 0.25em;
+}
+
+.display-8 {
+  font-size: 3em;
+}
+
+.sponsor-image {
+  margin: 1em 0;
 }
 
 #cover {
@@ -38,14 +58,6 @@ html, body {
   background-repeat: no-repeat;
 }
 
-.display-1 {
-  font-size: 10em;
-}
-
-.display-8 {
-  font-size: 3em;
-}
-
 #cover button {
   width: 250px;
   font-size: 1.5em;
@@ -56,10 +68,6 @@ html, body {
   margin: auto;
 }
 
-.display-4 {
-  text-align: center;
-  padding-top: 0.25em;
-}
 
 #faq {
   background: #44444444;
@@ -69,8 +77,4 @@ html, body {
 #contact {
   background: #000000;
   color: white;
-}
-
-.sponsor-image {
-  margin: 1em 0;
 }
