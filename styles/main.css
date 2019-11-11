@@ -40,7 +40,7 @@ html {
 }
 
 .card {
-  width: 600px;
+  width: 75%;
   margin: 0 auto 1em;
 }
 
@@ -64,7 +64,7 @@ html {
 }
 
 #cover button {
-  width: 250px;
+  width: 25%;
   font-size: 1.5em;
   margin: 1.5em 0.5em;
 }
