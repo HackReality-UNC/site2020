@@ -82,17 +82,26 @@
     </nav>
     
     <!-- Home -->
-    <div class="container-fluid" id="cover">
-      <button type="button" class="btn btn-secondary btn-lg">Register</button>
-      <button type="button" class="btn btn-secondary btn-lg">Volunteer</button>
-      <button type="button" class="btn btn-secondary btn-lg btn-block">
-        Sponsor
-      </button>
+    <div class="container-fluid" id="home">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <img class="logo img-fluid" src="./images/logo.gif" alt="HackReality logo.">
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div id="hackreality">
+            <h1 class="display-1">March 27-29</h1>
+            <h2 class="display-4">UNC Chapel Hill</h2>
+            <button type="button" id="register-btn" class="btn btn-secondary btn-lg">Register</button>
+            <button type="button" id="volunteer-btn" class="btn btn-secondary btn-lg">Volunteer</button>
+            <button type="button" id="sponsor-btn" class="btn btn-secondary btn-lg">Sponsor</button>
+          </div>      
+        </div>
+      </div>
     </div>
 
     <!-- About -->
     <div class="container-fluid" id="about">
-      <h1 class="display-4"><a name="about">What is HackReality?</a></h1>
+      <h1 class="display-4 section-header"><a name="about">What is HackReality?</a></h1>
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. 
@@ -107,7 +116,7 @@
 
     <!-- FAQ/Travel -->
     <div class="container-fluid" id="faq">
-      <h1 class="display-4">FAQ</h1>
+      <h1 class="display-4 section-header">FAQ</h1>
 
       <div class="accordion" id="accordionExample">
         <div class="row padding">
@@ -336,8 +345,8 @@
 
     <!-- Sponsors -->
     <div class="container-fluid" id="sponsors">
-      <h1 class="display-4"><a name="sponsors">Sponsors</a></h1>
       <div class="row text-center">
+        <h1 class="display-4 section-header"><a name="sponsors">Sponsors</a></h1>
         <div class="col-md-12 sponsor-image">
           <img src="http://placekitten.com/300/300" alt="" />
         </div>
@@ -353,7 +362,7 @@
     <footer>
       <div class="container-fluid padding" id="contact">
         <div class="row text-center">
-          <div class="col-md-12">
+          <div class="col-md-12 section-header">
             <hr class="light" />
             <h1><a name="contact">Contact</a></h1>
             <hr class="light" />
