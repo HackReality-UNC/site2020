@@ -104,7 +104,7 @@ html {
 #about {
   width: 66.7%;
   text-align: left;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 #about h1 {
@@ -119,7 +119,7 @@ html {
 
 #faq {
   width: 66.7%;
-  min-height: 300px;
+  min-height: 400px;
 }
 #faq h1 {
   color: #d90368;
@@ -163,7 +163,7 @@ html {
 
 #sponsors {
   width: 66.7%;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 #sponsors h1 {
