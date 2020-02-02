@@ -1,6 +1,9 @@
 html,
 body {
   height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "Yantramanav", sans-serif;
   background-color: black;
 }
@@ -43,54 +46,38 @@ html {
 #home {
   text-align: center;
   color: white;
-
   height: 100%;
-  width: 100%;
-
-  margin-left: 0;
-  margin-right: 0;
-
   overflow: hidden;
-
-  /* background-image: url("../images/placeholder.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
 }
 
 .logo {
-  margin-top: 15%;
-  margin-left: 30%;
-  width: 67%;
+  margin-top: 33.3%;
+  width: 80%;
 }
 
 #hackreality {
-  margin-top: 37.5%;
-  margin-right: 45%;
-
+  text-align: center !important;
 }
 
 #hackreality h1 {
-  font-size: 4.5em;
-  margin-bottom: 10%;
-  text-align: right;
-  font-weight: 500;
+  font-size: 10vw;
+  margin-bottom: 2.5%;
+  font-weight: 550;
 }
 
 #hackreality h2 {
-  font-size: 2.5em;
-  margin-bottom: 12.5%;
-  text-align: right;
+  font-size: 7.5vw;
+  margin-bottom: 5%;
   font-weight: 400;
 }
 
 #hackreality button {
-  font-size: 1.5em;
+  font-size: 5vw;
   text-align: center;
   background-color: black;
   border: none;
 
-  float: right;
+  /* float: right; */
 
   margin-left: 2%   !important;
 }
@@ -116,13 +103,15 @@ html {
 /* about styles */
 
 #about {
-  width: 66.7%;
-  text-align: left;
+  width: 90%;
+  /* height: 100%; */
+
   min-height: 400px;
 }
 
 #about h1 {
   color: #f75c03;
+  font-size: 7.5vw;
 }
 
 #about p {
@@ -133,11 +122,16 @@ html {
 
 #faq {
   width: 66.7%;
+  /* height: 100%; */
+
   min-height: 400px;
+  
 }
 #faq h1 {
   color: #d90368;
   text-align: center;
+  font-size: 7.5vw;
+
 }
 
 .card {
@@ -177,12 +171,15 @@ html {
 
 #sponsors {
   width: 66.7%;
+  /* height: 100%; */
+
   min-height: 400px;
 }
 
 #sponsors h1 {
   color: #820263;
-  text-align: right;
+  text-align: center;
+  font-size: 7.5vw;
 }
 
 #sponsors img {
@@ -253,4 +250,39 @@ html {
 
 .navbar-brand:hover {
   color: white;       /* Overwriting BS default */
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-top: 15%;
+    margin-left: 30%;
+    width: 65%;
+  }
+
+  #hackreality {
+    margin-top: 37.5%;
+    margin-right: 45%;  
+  }
+
+  #hackreality h1 {
+    font-size: 4vw;
+    margin-bottom: 10%;
+
+  }
+
+  #hackreality h2 {
+    margin-bottom: 12.5%;
+    font-size: 2vw;
+  }
+
+  #hackreality h1, #hackreality h2 {
+    text-align: right;
+  }
+
+  #hackreality button {
+    float: right;
+    font-size: 1.5vw;
+  }
 }
