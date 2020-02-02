@@ -15,7 +15,7 @@ html {
 /* general header class styles */
 
 .section-header {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* nav styles */
@@ -51,7 +51,7 @@ html {
 }
 
 .logo {
-  margin-top: 33.3%;
+  margin-top: 25%;
   width: 80%;
 }
 
@@ -62,24 +62,28 @@ html {
 #hackreality h1 {
   font-size: 10vw;
   margin-bottom: 2.5%;
-  font-weight: 550;
 }
 
 #hackreality h2 {
   font-size: 7.5vw;
   margin-bottom: 5%;
-  font-weight: 400;
 }
 
 #hackreality button {
   font-size: 5vw;
-  text-align: center;
+  font-weight: 600;
+
+  /* text-align: center; */
   background-color: black;
   border: none;
 
   /* float: right; */
 
   margin-left: 2%   !important;
+}
+
+#hackreality button:focus {
+  box-shadow: none;
 }
 
 #hackreality button:hover {
@@ -143,6 +147,9 @@ html {
   background-color: black;
   color: white;
   padding: 0;
+
+  border: none;
+
 }
 
 .card-header:hover {
@@ -214,6 +221,19 @@ html {
 /* NEW CHANGES */
 /***************/
 
+.navbar-toggler {
+  width: 40px;
+
+  background-image: url("../images/hb-icon.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar-toggler:focus {
+  outline: rgba(0, 0, 0, 0);
+}
+
 /* hover properties */
 
 #about-link:hover {
@@ -258,23 +278,22 @@ html {
   .logo {
     margin-top: 15%;
     margin-left: 30%;
-    width: 65%;
+    width: 70%;
   }
 
   #hackreality {
-    margin-top: 37.5%;
-    margin-right: 45%;  
+    margin-top: 32.5%;
+    margin-right: 35%;  
   }
 
   #hackreality h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     margin-bottom: 10%;
-
   }
 
   #hackreality h2 {
+    font-size: 2.5vw;
     margin-bottom: 12.5%;
-    font-size: 2vw;
   }
 
   #hackreality h1, #hackreality h2 {
@@ -282,7 +301,19 @@ html {
   }
 
   #hackreality button {
+    font-size: 1.75vw;
     float: right;
-    font-size: 1.5vw;
+  }
+
+  #about, #faq, #sponsors {
+    width: 75%;
+  }
+
+  #about h1, #faq h1, #sponsors h1 {
+    font-size: 6vw;
+  }
+
+  #sponsors h1 {
+    text-align: right;
   }
 }
