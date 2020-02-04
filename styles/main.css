@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  max-width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Yantramanav", sans-serif;
@@ -10,6 +9,10 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+h1 {
+  text-align: center;
 }
 
 /* general header class styles */
@@ -45,6 +48,19 @@ html {
   color: white;
 }
 
+.navbar-toggler {
+  width: 40px;
+
+  background-image: url("../images/hb-icon.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar-toggler:focus {
+  outline: rgba(0, 0, 0, 0);
+}
+
 /* home styles */
 
 #home {
@@ -55,7 +71,6 @@ html {
 }
 
 .logo {
-  /* margin-top: 25%; */
   width: 80%;
 }
 
@@ -66,6 +81,7 @@ html {
 #hackreality h1 {
   font-size: 10vw;
   margin-bottom: 2.5%;
+  font-weight: 600;
 }
 
 #hackreality h2 {
@@ -124,6 +140,7 @@ html {
   font-size: 1.5em;
 }
 
+
 /* faq styles */
 
 #faq {
@@ -134,19 +151,17 @@ html {
   color: #d90368;
   text-align: center;
   font-size: 7.5vw;
-
+  margin: 1em 0;
 }
 
 .card {
-  margin: 0 auto 1em;
-  width: 75%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .card-header {
   background-color: black;
   color: white;
-  padding: 0;
-
   border: none;
 
 }
@@ -156,21 +171,26 @@ html {
   color: black;
 }
 
-#faq button {
-  color: white;
-  background-color: black;
-  
+.card .btn-link:hover, .card .btn-link:focus {
   text-decoration: none;
+}
+
+.card button {
   width: 100%;
 }
 
-#faq button:hover {
-  background-color: rgb(255,255,255);
-  color: black;
+.card .btn-link {
+  font-size: 0.5em;
+  font-weight: 600;
+  color: #d90368;
 }
 
-.accordion {
-  font-size: 1.25em !important;
+.card-text {
+  font-size: 1.5em !important;
+}
+
+#guidelines .card {
+  width: 90%;
 }
 
 /* sponsor styles */
@@ -186,7 +206,7 @@ html {
 }
 
 #sponsors img {
-  width: 100%;
+  width: 90%;
   margin: 1em 0;
 
 }
@@ -196,6 +216,7 @@ html {
 #contact {
   color: #04a777;
   background-color: rgb(15, 15, 15);
+  font-size: 1.5em;
 }
 #contact a {
   color: #04a777;
@@ -211,23 +232,6 @@ html {
 
 #copyright {
   color: #2f343a;
-}
-
-/***************/
-/* NEW CHANGES */
-/***************/
-
-.navbar-toggler {
-  width: 40px;
-
-  background-image: url("../images/hb-icon.svg");
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.navbar-toggler:focus {
-  outline: rgba(0, 0, 0, 0);
 }
 
 /* hover properties */
@@ -268,10 +272,18 @@ html {
   color: white;       /* Overwriting BS default */
 }
 
+
+.color-orange {
+  color: #f75c03;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 768px) {
   body{font-size: 10px;}
+  .container {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -280,7 +292,11 @@ html {
 
   .logo {
     height: auto;
-    width: 500px;
+    width: 600px;
+  }
+
+  .card .btn-link {
+    font-size: 0.75em;
   }
 
   #hackreality {
@@ -308,7 +324,19 @@ html {
 
   #about h1, #faq h1, #sponsors h1 {
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 600;
+  }
+
+  #about h1 {
+    text-align: left;
+  }
+
+  #about-xr h1 {
+    text-align: right;
+  }
+
+  #guidelines .card {
+    width: 50%;
   }
 
   #sponsors h1 {
