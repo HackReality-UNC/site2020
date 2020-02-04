@@ -18,6 +18,10 @@ html {
   font-weight: 500;
 }
 
+.site-section {
+  padding: 10em 0;
+}
+
 /* nav styles */
 
 .navbar-default {
@@ -51,7 +55,7 @@ html {
 }
 
 .logo {
-  margin-top: 25%;
+  /* margin-top: 25%; */
   width: 80%;
 }
 
@@ -107,9 +111,6 @@ html {
 /* about styles */
 
 #about {
-  width: 90%;
-  /* height: 100%; */
-
   min-height: 400px;
 }
 
@@ -120,14 +121,12 @@ html {
 
 #about p {
   color: white;
+  font-size: 1.5em;
 }
 
 /* faq styles */
 
 #faq {
-  width: 66.7%;
-  /* height: 100%; */
-
   min-height: 400px;
   
 }
@@ -177,9 +176,6 @@ html {
 /* sponsor styles */
 
 #sponsors {
-  width: 66.7%;
-  /* height: 100%; */
-
   min-height: 400px;
 }
 
@@ -274,46 +270,52 @@ html {
 
 /* Media queries */
 
+@media only screen and (max-width: 768px) {
+  body{font-size: 10px;}
+}
+
 @media only screen and (min-width: 768px) {
+
+  body{font-size: 12px;}
+
   .logo {
-    margin-top: 15%;
-    margin-left: 30%;
-    width: 70%;
+    height: auto;
+    width: 500px;
   }
 
   #hackreality {
-    margin-top: 32.5%;
-    margin-right: 35%;  
+    padding-top: 3.5em;
   }
 
   #hackreality h1 {
-    font-size: 5vw;
-    margin-bottom: 10%;
+    font-size: 5em;
+    margin-bottom: 50px;
   }
 
   #hackreality h2 {
-    font-size: 2.5vw;
-    margin-bottom: 12.5%;
+    font-size: 3em;
+    margin-bottom: 60px;
+  }
+
+  #hackreality button {
+    font-size: 1.75em;
+    float: right;
   }
 
   #hackreality h1, #hackreality h2 {
     text-align: right;
   }
 
-  #hackreality button {
-    font-size: 1.75vw;
-    float: right;
-  }
-
-  #about, #faq, #sponsors {
-    width: 75%;
-  }
-
   #about h1, #faq h1, #sponsors h1 {
-    font-size: 6vw;
+    font-size: 3em;
+    font-weight: 500;
   }
 
   #sponsors h1 {
     text-align: right;
   }
+}
+
+@media only screen and (min-width: 992px) {
+  body{font-size: 16px;}
 }
