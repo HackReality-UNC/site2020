@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-family: "Yantramanav", sans-serif;
   background-color: rgba(12.5, 12.5, 12.5, 1);
-  background-image: url('../images/bg.png');
+  background-image: url("../images/bg.png");
 }
 
 html {
@@ -87,6 +87,7 @@ h1 {
 #hackreality h2 {
   font-size: 7.5vw;
   margin-bottom: 5%;
+  animation-delay: 250ms;
 }
 
 #hackreality button {
@@ -94,7 +95,7 @@ h1 {
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  margin-left: 2%   !important;
+  margin-left: 2% !important;
 }
 
 #hackreality button:focus {
@@ -102,22 +103,25 @@ h1 {
 }
 
 #hackreality button:hover {
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
 #sponsor-btn {
   color: #f75c03;
+  animation-delay: 1s;
 }
 
 #volunteer-btn {
   color: #d90368;
+  animation-delay: 667ms;
+
 }
 
 #register-btn {
   color: #04a777;
+  animation-delay: 334ms;
 }
-
 
 /* about styles */
 
@@ -127,7 +131,7 @@ h1 {
 
 #about h1 {
   color: #f75c03;
-  font-size: 7.5vw;
+  font-size: 3em;
 }
 
 #about p {
@@ -135,17 +139,15 @@ h1 {
   font-size: 1.5em;
 }
 
-
 /* faq styles */
 
 #faq {
   min-height: 400px;
-  
 }
 #faq h1 {
   color: #d90368;
   text-align: center;
-  font-size: 7.5vw;
+  font-size: 3em;
   margin: 1em 0;
 }
 
@@ -158,15 +160,15 @@ h1 {
   background-color: black;
   color: white;
   border: none;
-
 }
 
 .card-header:hover {
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
-.card .btn-link:hover, .card .btn-link:focus {
+.card .btn-link:hover,
+.card .btn-link:focus {
   text-decoration: none;
 }
 
@@ -175,7 +177,7 @@ h1 {
 }
 
 .card .btn-link {
-  font-size: 0.5em;
+  font-size: 0.55em;
   font-weight: 600;
   color: #d90368;
 }
@@ -197,17 +199,17 @@ h1 {
 #sponsors h1 {
   color: #820263;
   text-align: center;
-  font-size: 7.5vw;
+  font-size: 3em;
 }
 
 #sponsors img {
-  width: 250px;
+  width: 225px;
   margin: 1em 0;
-
+  animation-delay: 250ms;
 }
 
 #bldg {
-  width: 190px !important;
+  width: 165px !important;
 }
 
 /* contact styles */
@@ -217,16 +219,23 @@ h1 {
   background-color: rgb(15, 15, 15);
   font-size: 1.5em;
 }
+
+#contact h1 {
+  font-size: 3em;
+}
+
 #contact a {
   color: #04a777;
 }
 
-.light { 
-  display: block; 
+.light {
+  display: block;
   height: 1px;
-  width: 165px;  
-  border: 0; border-top: 1px solid #2f343a;
-  margin: 1em auto; padding: 0; 
+  width: 165px;
+  border: 0;
+  border-top: 1px solid #2f343a;
+  margin: 1em auto;
+  padding: 0;
 }
 
 #copyright {
@@ -268,9 +277,8 @@ h1 {
 }
 
 .navbar-brand:hover {
-  color: white;       /* Overwriting BS default */
+  color: white; /* Overwriting BS default */
 }
-
 
 .color-orange {
   color: #f75c03;
@@ -279,19 +287,22 @@ h1 {
 /* Media queries */
 
 @media only screen and (max-width: 768px) {
-  body{font-size: 11px;}
+  body {
+    font-size: 12px;
+  }
   .container {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-
   #contact {
     font-size: 1em;
   }
 
-  body{font-size: 12px;}
+  body {
+    font-size: 12px;
+  }
 
   .logo {
     height: auto;
@@ -321,11 +332,14 @@ h1 {
     float: right;
   }
 
-  #hackreality h1, #hackreality h2 {
+  #hackreality h1,
+  #hackreality h2 {
     text-align: right;
   }
 
-  #about h1, #faq h1, #sponsors h1 {
+  #about h1,
+  #faq h1,
+  #sponsors h1 {
     font-size: 3em;
     font-weight: 600;
   }
@@ -338,15 +352,14 @@ h1 {
     text-align: right;
   }
 
-  #guidelines .card, #first-time .card {
+  #guidelines .card,
+  #first-time .card {
     width: 50%;
-  }
-
-  #sponsors h1 {
-    /* text-align: left; */
   }
 }
 
 @media only screen and (min-width: 992px) {
-  body{font-size: 16px;}
+  body {
+    font-size: 16px;
+  }
 }
