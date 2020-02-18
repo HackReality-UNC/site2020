@@ -205,7 +205,14 @@ h1 {
 #sponsors img {
   width: 225px;
   margin: 1em 0;
+  vertical-align: middle;
   animation-delay: 250ms;
+}
+
+.sponsor-image {
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 #bldg {
