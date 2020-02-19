@@ -131,10 +131,8 @@ html {
 
 /* about styles */
 
-.about-img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-img {
+  margin-bottom: 25px;
 }
 
 #about p {
