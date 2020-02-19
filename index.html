@@ -30,12 +30,19 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U="
+      crossorigin="anonymous"
+    ></script>
     <script>
       new WOW().init();
     </script>
-    
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -61,7 +68,7 @@
         ><span class="purple">Real</span><span class="green">ity</span>
       </a>
       <button
-        class="navbar-toggler"
+        class="hb navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -101,15 +108,29 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <div id="hackreality">
-            <h1 class="display-1 animated fadeInRight">March 27-29</h1>
-            <h2 class="display-4 animated fadeInRight">UNC Chapel Hill</h2>
-            <button type="button" id="register-btn" class="btn btn-lg animated fadeIn">
+            <h1 id="date-header" class="animated fadeInRight">March 27-29</h1>
+            <h2 id="location-header" class="animated fadeInRight">
+              UNC Chapel Hill
+            </h2>
+            <button
+              type="button"
+              id="register-btn"
+              class="signup-btn btn btn-lg animated fadeIn"
+            >
               Register
             </button>
-            <button type="button" id="volunteer-btn" class="btn btn-lg animated fadeIn">
+            <button
+              type="button"
+              id="volunteer-btn"
+              class="signup-btn btn btn-lg animated fadeIn"
+            >
               Volunteer
             </button>
-            <button type="button" id="sponsor-btn" class="btn btn-lg animated fadeIn">
+            <button
+              type="button"
+              id="sponsor-btn"
+              class="signup-btn btn btn-lg animated fadeIn"
+            >
               Sponsor
             </button>
           </div>
@@ -121,7 +142,7 @@
     <div class="container site-section" id="about">
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <h1 class="display-4 section-header wow animated fadeIn">
+          <h1 class="section-header color-orange wow animated fadeIn">
             <a name="about">What is HackReality?</a>
           </h1>
           <p class="wow animated fadeIn">
@@ -138,13 +159,19 @@
             apply what you have learned in future projects!
           </p>
         </div>
-        <div class="col-md-6 col-sm-12 about-img">
-          <img class="about-img wow animated fadeIn" src=".\images\au1.jpeg" alt="">
+        <div class="col-md-6 col-sm-12 center-img-container">
+          <img
+            class="about-img wow animated fadeIn"
+            src=".\images\au1.jpeg"
+            alt=""
+          />
         </div>
       </div>
       <div class="row" id="about-xr">
         <div class="col-md-6 col-sm-12 order-md-2">
-          <h1 class="display-4 section-header wow animated fadeIn">What is XR?</h1>
+          <h1 class="section-header color-orange wow animated fadeIn">
+            What is XR?
+          </h1>
           <p class="wow animated fadeIn">
             <span class="color-orange">XR</span> stands for Extended Reality,
             and is an umbrella term for both AR and VR. XR refers to all
@@ -165,18 +192,24 @@
             SnapChat Face Filters and Google Translate AR are all examples of AR
           </p>
         </div>
-        <div class="col-md-6 col-sm-12 about-img order-md-1">
-          <img class="about-img wow animated fadeIn" src=".\images\au2.jpeg" alt="">
+        <div class="col-md-6 col-sm-12 center-img-container order-md-1">
+          <img
+            class="about-img wow animated fadeIn"
+            src=".\images\au2.jpeg"
+            alt=""
+          />
         </div>
       </div>
     </div>
 
     <hr />
 
-    <!-- FAQ/Travel -->
+    <!-- FAQs -->
     <div class="container site-section" id="faq">
       <div class="accordion" id="accordionExample">
-        <h1 class="display-4 section-header wow animated fadeIn">First-Timers FAQ</h1>
+        <h1 class="section-header wow animated fadeIn">
+          First-Timers FAQ
+        </h1>
         <div class="row" id="first-time">
           <div class="col-md-12">
             <div class="card wow animated fadeIn">
@@ -283,7 +316,9 @@
             </div>
           </div>
         </div>
-        <h1 class="display-4 section-header wow animated fadeIn">General FAQ</h1>
+        <h1 class="section-header wow animated fadeIn">
+          General FAQ
+        </h1>
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="card wow animated fadeIn">
@@ -357,7 +392,7 @@
                     aria-expanded="false"
                     aria-controls="collapseSix"
                   >
-                    I don't have any XR equipment?
+                    Do I need my own XR equipment?
                   </button>
                 </h2>
               </div>
@@ -533,7 +568,7 @@
             </div>
           </div>
         </div>
-        <h1 class="display-4 section-header wow animated fadeIn">Guidelines</h1>
+        <h1 class="section-header wow animated fadeIn">Guidelines</h1>
         <div class="row" id="guidelines">
           <div class="col-md-12">
             <div class="card wow animated fadeIn">
@@ -649,27 +684,50 @@
 
     <!-- Sponsors -->
     <div class="container site section" id="sponsors">
-      <h1 class="display-4 section-header wow animated fadeIn"><a name="sponsors">Sponsored by</a></h1>
+      <h1 class="section-header wow animated fadeIn">
+        <a name="sponsors">Sponsored by</a>
+      </h1>
       <div class="row text-center">
-        <div class="col-md-4 sponsor-image">
-          <img class="wow animated fadeIn" src="./images/exothermic-logo.png" alt="" />
+        <div class="col-md-4 center-img-container">
+          <img
+            class="wow animated fadeIn"
+            src="./images/exothermic-logo.png"
+            alt=""
+          />
         </div>
-        <div class="col-md-4 sponsor-image">
-          <img id="bldg" class="wow animated fadeIn" src="./images/bldg-logo-red.png" alt="" />
+        <div class="col-md-4 center-img-container">
+          <img
+            id="bldg"
+            class="wow animated fadeIn"
+            src="./images/bldg-logo-red.png"
+            alt=""
+          />
         </div>
-        <div class="col-md-4 sponsor-image">
-          <img class="wow animated fadeIn" src=".\images\innovatecarolina-logo.png" alt="" />
+        <div class="col-md-4 center-img-container">
+          <img
+            class="wow animated fadeIn"
+            src=".\images\innovatecarolina-logo.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-md-4 sponsor-image">
-          <img class="wow animated fadeIn" src=".\images\kf-logo-dark.png" alt="" />
+        <div class="col-md-4 center-img-container">
+          <img
+            class="wow animated fadeIn"
+            src=".\images\kf-logo-dark.png"
+            alt=""
+          />
         </div>
-        <div class="col-md-4 sponsor-image">
+        <div class="col-md-4 center-img-container">
           <img class="wow animated fadeIn" src=".\images\il-logo.png" alt="" />
         </div>
-        <div class="col-md-4 sponsor-image">
-          <img class="wow animated fadeIn" src="./images/hr-logo-small.png" alt="" />
+        <div class="col-md-4 center-img-container">
+          <img
+            class="wow animated fadeIn"
+            src="./images/hr-logo-small.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

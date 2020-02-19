@@ -12,23 +12,30 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  text-align: center;
-}
-
-/* general header class styles */
+/* general styles */
 
 .section-header {
   font-weight: 500;
+  font-size: 3em;
 }
 
 .site-section {
   padding: 7.5em 0;
 }
 
+.color-orange {
+  color: #f75c03;
+}
+
+.center-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* nav styles */
 
-.navbar-default {
+.navbar {
   padding: 0.33em 1em;
   font-family: "Yantramanav", sans-serif;
   background-color: rgb(15, 15, 15);
@@ -65,32 +72,32 @@ h1 {
 /* home styles */
 
 #home {
-  text-align: center;
   color: white;
   overflow: hidden;
+  text-align: center;
 }
 
 .logo {
   width: 80%;
 }
 
-#hackreality {
-  text-align: center !important;
-}
-
-#hackreality h1 {
+#date-header {
   font-size: 10vw;
   margin-bottom: 2.5%;
   font-weight: 600;
 }
 
-#hackreality h2 {
+#location-header {
   font-size: 7.5vw;
   margin-bottom: 5%;
   animation-delay: 250ms;
 }
 
-#hackreality button {
+.about-img {
+  width: 100%;
+}
+
+.signup-btn {
   font-size: 5vw;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0);
@@ -98,11 +105,11 @@ h1 {
   margin-left: 2% !important;
 }
 
-#hackreality button:focus {
+.signup-btn:focus {
   box-shadow: none;
 }
 
-#hackreality button:hover {
+.signup-btn:hover {
   background-color: rgb(255, 255, 255);
   color: black;
 }
@@ -115,7 +122,6 @@ h1 {
 #volunteer-btn {
   color: #d90368;
   animation-delay: 667ms;
-
 }
 
 #register-btn {
@@ -125,24 +131,10 @@ h1 {
 
 /* about styles */
 
-.about-img {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.about-img img {
-  margin: 2em 0;
-  width: 90%;
-}
-
-#about {
-  min-height: 400px;
-}
-
-#about h1 {
-  color: #f75c03;
-  font-size: 3em;
+.about-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #about p {
@@ -152,13 +144,9 @@ h1 {
 
 /* faq styles */
 
-#faq {
-  min-height: 400px;
-}
 #faq h1 {
   color: #d90368;
   text-align: center;
-  font-size: 3em;
   margin: 1em 0;
 }
 
@@ -207,14 +195,9 @@ h1 {
 
 /* sponsor styles */
 
-#sponsors {
-  min-height: 400px;
-}
-
 #sponsors h1 {
   color: #820263;
   text-align: center;
-  font-size: 3em;
 }
 
 #sponsors img {
@@ -222,12 +205,6 @@ h1 {
   margin: 2em 0;
   vertical-align: middle;
   animation-delay: 250ms;
-}
-
-.sponsor-image {
-  display:flex;
-  align-items:center;
-  justify-content:center;
 }
 
 #bldg {
@@ -239,15 +216,14 @@ h1 {
 #contact {
   color: #04a777;
   background-color: rgb(15, 15, 15);
-  font-size: 1.5em;
-}
-
-#contact h1 {
-  font-size: 3em;
 }
 
 #contact a {
-  color: #04a777;
+  color: #04a777 !important;
+}
+
+#contact p {
+  font-size: 0.5em;
 }
 
 .light {
@@ -302,10 +278,6 @@ h1 {
   color: white; /* Overwriting BS default */
 }
 
-.color-orange {
-  color: #f75c03;
-}
-
 /* Media queries */
 
 @media only screen and (max-width: 768px) {
@@ -349,7 +321,7 @@ h1 {
     margin-bottom: 60px;
   }
 
-  #hackreality button {
+  .signup-btn {
     font-size: 1.75em;
     float: right;
   }
