@@ -3,8 +3,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Yantramanav", sans-serif;
-  background-color: rgba(12.5, 12.5, 12.5, 1);
+  font-family: "Yantramanav", sans-serif !important;
+  background-color: rgba(15, 15, 15, 1);
   background-image: url("../images/bg.png");
 }
 
@@ -15,7 +15,7 @@ html {
 /* general styles */
 
 .section-header {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 3em;
 }
 
@@ -25,6 +25,10 @@ html {
 
 .color-orange {
   color: #f75c03;
+}
+
+.color-pink {
+  color: #d90368;
 }
 
 .center-img-container {
@@ -93,10 +97,6 @@ html {
   animation-delay: 250ms;
 }
 
-.about-img {
-  width: 100%;
-}
-
 .signup-btn {
   font-size: 5vw;
   font-weight: 600;
@@ -132,6 +132,7 @@ html {
 /* about styles */
 
 .about-img {
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -191,6 +192,43 @@ html {
   font-size: 1em !important;
 }
 
+/* schedule */
+.table {
+  text-align: center;
+}
+
+.table-header-row {
+  background-color: rgb(25, 25, 25);
+  color: #d90368;
+}
+
+.table-header {
+  font-size: 2.5em;
+}
+
+td {
+  font-size: 1.5em !important;
+  color: white;
+  text-align: left;
+  border-top: 1px solid #820263 !important;
+
+}
+
+.crit {
+  /* text-align: center; */
+  color: #d90368;
+  font-size: 2em;
+
+}
+
+.time {
+  font-weight: 600;
+}
+
+#schedule h1 {
+  margin-bottom: 1em;
+}
+
 /* sponsor styles */
 
 #sponsors h1 {
@@ -245,6 +283,10 @@ html {
 }
 
 #faq-link:hover {
+  color: #d90368;
+}
+
+#schedule-link:hover {
   color: #d90368;
 }
 
