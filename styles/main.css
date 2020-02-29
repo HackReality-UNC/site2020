@@ -20,7 +20,7 @@ html {
 }
 
 .site-section {
-  padding: 7.5em 0;
+  padding: 5em 0;
 }
 
 .color-orange {
@@ -211,14 +211,12 @@ td {
   color: white;
   text-align: left;
   border-top: 1px solid #820263 !important;
-
 }
 
 .crit {
   /* text-align: center; */
   color: #d90368;
   font-size: 2em;
-
 }
 
 .time {
