@@ -129,6 +129,10 @@ html {
   animation-delay: 334ms;
 }
 
+.notice {
+  text-align: left;
+}
+
 /* about styles */
 
 .about-img {
@@ -328,6 +332,9 @@ td {
 
   #schedule {
     width: 95%;
+  }
+  .notice {
+    text-align: center;
   }
 }
 
